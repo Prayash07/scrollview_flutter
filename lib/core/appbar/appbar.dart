@@ -1,14 +1,19 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 class CustomAppbar extends StatelessWidget {
-  const CustomAppbar({super.key});
+  const CustomAppbar({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: const Text(
-        "Custom Scroll View Example",
-        style: TextStyle(
+      title: Text(
+        title,
+        style: const TextStyle(
           color: Colors.white,
         ),
       ),

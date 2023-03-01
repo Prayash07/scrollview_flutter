@@ -14,7 +14,9 @@ class NestedScrollViewExample extends StatelessWidget {
       backgroundColor: const Color(0xff0E1117),
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(60),
-        child: CustomAppbar(),
+        child: CustomAppbar(
+          title: "Nested Scroll View",
+        ),
       ),
       body: NestedScrollView(
           headerSliverBuilder: ((context, innerBoxIsScrolled) {

@@ -14,7 +14,9 @@ class CustomScrollViewExample extends StatelessWidget {
       backgroundColor: const Color(0xff0E1117),
       appBar: const PreferredSize(
         preferredSize: Size.fromHeight(60),
-        child: CustomAppbar(),
+        child: CustomAppbar(
+          title: "Custom Scroll View",
+        ),
       ),
       body: CustomScrollView(
         slivers: [

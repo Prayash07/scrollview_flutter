@@ -10,18 +10,18 @@ class ApprouteGenerator {
     switch (settings.name) {
       case AppRoute.homepage:
         return PageTransition(
-            child: const HomePage(), type: PageTransitionType.leftToRight);
+            child: const HomePage(), type: PageTransitionType.rightToLeft);
       case AppRoute.customScrollView:
         return PageTransition(
             child: const CustomScrollViewExample(),
-            type: PageTransitionType.leftToRight);
+            type: PageTransitionType.rightToLeft);
       case AppRoute.nestedScrollView:
         return PageTransition(
             child: const NestedScrollViewExample(),
-            type: PageTransitionType.leftToRight);
+            type: PageTransitionType.rightToLeft);
       default:
         return PageTransition(
-            child: const HomePage(), type: PageTransitionType.leftToRight);
+            child: const HomePage(), type: PageTransitionType.rightToLeft);
     }
   }
 }

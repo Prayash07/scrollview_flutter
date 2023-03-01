@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_scrollview/core/routes/route_generator.dart';
-import 'package:flutter_scrollview/features/homepage/presentation/pages/homepage.dart';
 
 void main() {
   runApp(const MyApp());
