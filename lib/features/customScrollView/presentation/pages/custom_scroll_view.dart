@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_scrollview/core/appbar/appbar.dart';
 import 'package:flutter_scrollview/core/cards/header_card.dart';
 import 'package:flutter_scrollview/core/cards/list_card.dart';
 import 'package:flutter_scrollview/core/cards/text_form_field.dart';
@@ -11,15 +12,9 @@ class CustomScrollViewExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff0E1117),
-      appBar: AppBar(
-        title: const Text(
-          "Custom Scroll View Example",
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
-        backgroundColor: const Color(0xff161B22),
-        elevation: 0.5,
+      appBar: const PreferredSize(
+        preferredSize: Size.fromHeight(60),
+        child: CustomAppbar(),
       ),
       body: CustomScrollView(
         slivers: [

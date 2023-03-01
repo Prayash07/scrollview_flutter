@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_scrollview/features/customScrollView/presentation/pages/custom_scroll_view.dart';
-import 'package:flutter_scrollview/features/nestedScrollView/presentation/pages/nested_scroll_view.dart';
+import 'package:flutter_scrollview/core/routes/route_generator.dart';
+import 'package:flutter_scrollview/features/homepage/presentation/pages/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const CustomScrollViewExample(),
+      onGenerateRoute: ApprouteGenerator.routeGenerator,
     );
   }
 }
