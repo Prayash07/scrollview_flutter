@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_scrollview/features/customScrollView/custom_scroll_view.dart';
-import 'package:flutter_scrollview/features/nestedScrollView/nested_scroll_view.dart';
+import 'package:flutter_scrollview/features/customScrollView/presentation/pages/custom_scroll_view.dart';
+import 'package:flutter_scrollview/features/nestedScrollView/presentation/pages/nested_scroll_view.dart';
 
 void main() {
   runApp(const MyApp());
